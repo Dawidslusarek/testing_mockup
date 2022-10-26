@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../src/scss/main.scss",
+		"../src/scss/blocks/_all.scss",
+		"../src/scss/blocks/_header.scss"
+	],
+	"sourcesContent": [
+		"@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');\n\n@import './blocks/all';\n\n* {\n  padding: 0;\n  margin: 0;\n  font-family: 'Montserrat', sans-serif;\n}",
+		"@import './header';",
+		".container {\n  width: 100vw;\n  height: 100vh;\n\n  .container__header {\n    width: 100%;\n    height: 100%;\n    background-image: linear-gradient(#f38189e6 40%, #fce38ae8), url(\"./images/header_background.png\");\n  }\n\n  .container__nav {\n    max-width: 1200px;\n    margin: 0 auto;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    padding: 28px 0;\n\n    .nav__link {\n      margin-left: 26px;\n      text-decoration: none;\n\n      &--logo {\n        color: #fff;\n        font-size: 30px;\n        font-weight: bold;\n      }\n    }\n\n    .nav__menu {\n      display: flex;\n      column-gap: 60px;\n\n      &--item {\n        list-style: none;\n      }\n\n      &--link {\n        color: #fff;\n        text-decoration: none;\n        font-weight: normal;\n        font-size: 14px;\n        text-transform: uppercase;\n\n        svg {\n          max-width: 20px;\n          max-height: 20px;\n        }\n      }\n    }\n  }\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAC,wGAAI;;AEAZ,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAiDd;;;AAnDD,AAIE,UAJQ,CAIR,kBAAkB,CAAC;EACjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,yCAAyC,EAAE,qCAAqC;CACnG;;;AARH,AAUE,UAVQ,CAUR,eAAe,CAAC;EACd,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa;EAC9B,OAAO,EAAE,MAAM;CAkChB;;;AAlDH,AAkBI,UAlBM,CAUR,eAAe,CAQb,UAAU,CAAC;EACT,WAAW,EAAE,IAAI;EACjB,eAAe,EAAE,IAAI;CAOtB;;;AA3BL,AAsBM,UAtBI,CAUR,eAAe,CAYV,gBAAM,CAAC;EACN,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;CAClB;;;AA1BP,AA6BI,UA7BM,CAUR,eAAe,CAmBb,UAAU,CAAC;EACT,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;CAkBjB;;;AAjDL,AAiCM,UAjCI,CAUR,eAAe,CAuBV,gBAAM,CAAC;EACN,UAAU,EAAE,IAAI;CACjB;;;AAnCP,AAqCM,UArCI,CAUR,eAAe,CA2BV,gBAAM,CAAC;EACN,KAAK,EAAE,IAAI;EACX,eAAe,EAAE,IAAI;EACrB,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,SAAS;CAM1B;;;AAhDP,AA4CQ,UA5CE,CAUR,eAAe,CA2BV,gBAAM,CAOL,GAAG,CAAC;EACF,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;CACjB;;;AF3CT,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,wBAAwB;CACtC"
+}
