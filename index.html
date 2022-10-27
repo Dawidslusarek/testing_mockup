@@ -11,40 +11,41 @@
 </head>
 
 <body>
-  <section id="header" class="container">
+  <section id="header" class="container" aria-labelledby="main-title">
     <header class="container__header">
       <nav class="container__nav container__nav--desktop">
-        <a href="/" class="nav__link" tabindex="0" aria-label="Logo, link powrotu do strony głównej">
+        <a href="/#" class="nav__link" tabindex="0" aria-label="Logo, link powrotu do strony głównej">
           <span class="nav__link--logo">MoGo</span>
         </a>
         <ul class="nav__menu">
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="#header" tabindex="0" aria-label="Link do głównej sekcji strony">
+            <a class="nav__menu--link nav__menu--link-active" href="/#header" tabindex="0"
+              aria-label="Link do głównej sekcji strony">
               About
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="#service" tabindex="0" aria-label="Link do sekcji service">
+            <a class="nav__menu--link" href="/#service" tabindex="0" aria-label="Link do sekcji service">
               Service
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="#work" tabindex="0" aria-label="Link do sekcji work">
+            <a class="nav__menu--link" href="/#work" tabindex="0" aria-label="Link do sekcji work">
               Work
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="#blog" tabindex="0" aria-label="Link do sekcji blog">
+            <a class="nav__menu--link" href="/#blog" tabindex="0" aria-label="Link do sekcji blog">
               Blog
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="#contact" tabindex="0" aria-label="Link do sekcji contact">
+            <a class="nav__menu--link" href="/#contact" tabindex="0" aria-label="Link do sekcji contact">
               Contact
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="#" tabindex="0" aria-label="Link do koszyka">
+            <a class="nav__menu--link" href="/#" tabindex="0" aria-label="Link do koszyka">
               <svg width="46" height="46" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M2.88 3.72a.6.6 0 0 1 .6-.6h1.8a.6.6 0 0 1 .582.455l.486 1.945H20.28a.6.6 0 0 1 .588.718l-1.2 6a.6.6 0 0 1-.558.48l-11.277.567.345 1.835H18.48a.6.6 0 1 1 0 1.2H7.68a.6.6 0 0 1-.59-.49L5.293 6.25l-.48-1.929H3.48a.6.6 0 0 1-.6-.6Zm3.722 3 1.008 5.375 10.973-.55.965-4.825H6.602Zm2.278 9.6a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8Zm8.4 0a2.4 2.4 0 1 0 0 4.801 2.4 2.4 0 0 0 0-4.8Zm-8.4 1.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Zm8.4 0a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z">
@@ -53,7 +54,7 @@
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="#" tabindex="0" aria-label="Szukaj">
+            <a class="nav__menu--link" href="/#" tabindex="0" aria-label="Szukaj">
               <svg width="46" height="46" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.97 14.332a7.8 7.8 0 1 0-1.676 1.678h-.001c.036.048.074.094.117.138l4.62 4.62a1.2 1.2 0 0 0 1.698-1.697l-4.62-4.62a1.201 1.201 0 0 0-.138-.12v.001Zm.31-4.612a6.6 6.6 0 1 1-13.2 0 6.6 6.6 0 0 1 13.2 0Z">
@@ -63,8 +64,279 @@
           </li>
         </ul>
       </nav>
+      <div class="block__title">
+        <h1 id="main-title" class="block__title--title"><strong>Creative Template</strong>
+          Welcome <br /> to MoGo
+        </h1>
+      </div>
+      <div class="block__button">
+        <a class="block__button--link" href="/#service" tabindex="0" aria-label="Link do sekcji service">
+          Learn More
+        </a>
+      </div>
     </header>
   </section>
+  <main>
+    <section id="service" aria-labelledby="service-header">
+      <div class="service__container">
+        <div class="service__container--block-title">
+          <h2 id="service-header" class="service__container--title"><strong>We work with</strong> Amazing Services</h2>
+        </div>
+        <div class="services__grid">
+          <div class="services__grid--item">
+            <div class="services__grid--item-image">
+              <svg width="46" height="46" fill="#95e1d3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.625 8.875a.625.625 0 1 0-1.25 0v4.203L9.59 16.052a.625.625 0 1 0 1.073.644l1.875-3.125a.624.624 0 0 0 .088-.321V8.875Z">
+                </path>
+                <path
+                  d="M10.125 2a.625.625 0 0 0 0 1.25h.625v1.338A8.751 8.751 0 0 0 6.659 20.18l-.753.753a.625.625 0 1 0 .884.884l.933-.932A8.713 8.713 0 0 0 12 22a8.713 8.713 0 0 0 4.277-1.115l.933.932a.625.625 0 1 0 .884-.884l-.752-.753A8.75 8.75 0 0 0 13.25 4.588V3.25h.625a.625.625 0 1 0 0-1.25h-3.75Zm1.297 3.772a7.5 7.5 0 1 1 1.155 14.955 7.5 7.5 0 0 1-1.155-14.954ZM2 6.375c0 .941.416 1.786 1.075 2.359a10.044 10.044 0 0 1 4.409-4.409A3.125 3.125 0 0 0 2 6.375ZM18.875 3.25c-.941 0-1.786.416-2.359 1.075 1.9.965 3.444 2.509 4.409 4.409a3.125 3.125 0 0 0-2.05-5.484Z">
+                </path>
+              </svg>
+            </div>
+            <div class="services__grid--item-info">
+              <div class="services__grid--item-title">Photography</div>
+              <div class="services__grid--item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+          </div>
+          <div class="services__grid--item">
+            <div class="services__grid--item-image">
+              <svg width="46" height="46" fill="#95e1d3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5 21h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2ZM5 5h14l.001 14H5V5Z">
+                </path>
+                <path d="m13.553 11.66-4-2-2.448 4.895 1.79.894 1.553-3.105 4 2 2.447-4.895-1.79-.894-1.552 3.105Z">
+                </path>
+              </svg>
+            </div>
+            <div class="services__grid--item-info">
+              <div class="services__grid--item-title">Web Design</div>
+              <div class="services__grid--item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+          </div>
+          <div class="services__grid--item">
+            <div class="services__grid--item-image">
+              <svg width="46" height="46" fill="#95e1d3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.875 2A1.875 1.875 0 0 0 2 3.875v8.75A1.875 1.875 0 0 0 3.875 14.5H9.5v1.25H3.25A1.25 1.25 0 0 0 2 17v3.75A1.25 1.25 0 0 0 3.25 22h17.5A1.25 1.25 0 0 0 22 20.75V17a1.25 1.25 0 0 0-1.25-1.25H14.5V14.5h5.625A1.875 1.875 0 0 0 22 12.625v-8.75A1.875 1.875 0 0 0 20.125 2H3.875Zm0 1.25h16.25a.625.625 0 0 1 .625.625v8.75a.624.624 0 0 1-.625.625H3.875a.625.625 0 0 1-.625-.625v-8.75a.625.625 0 0 1 .625-.625ZM17 17.625a.624.624 0 1 1 1.249 0 .624.624 0 0 1-1.249 0Zm2.5 0a.624.624 0 1 1 1.249 0 .624.624 0 0 1-1.249 0ZM3.875 17h6.25a.624.624 0 1 1 0 1.25h-6.25a.625.625 0 1 1 0-1.25Zm-.625 2.813a.313.313 0 0 1 .313-.313h6.874a.313.313 0 1 1 0 .625H3.564a.312.312 0 0 1-.313-.313Z">
+                </path>
+              </svg>
+            </div>
+            <div class="services__grid--item-info">
+              <div class="services__grid--item-title">Creativity</div>
+              <div class="services__grid--item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+          </div>
+          <div class="services__grid--item">
+            <div class="services__grid--item-image">
+              <svg width="46" height="46" fill="#95e1d3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.6 5.922c.785-.827 2.139-1.063 3.735-.903 1.48.15 3.003.628 4.065 1.072v11.908c-1.101-.42-2.528-.83-3.944-.972-1.313-.134-2.734-.047-3.856.59V5.922ZM12 4.837c-1.182-1.016-2.895-1.168-4.455-1.012-1.817.184-3.65.807-4.793 1.326a.6.6 0 0 0-.352.546v13.2a.6.6 0 0 0 .849.546c1.058-.48 2.763-1.057 4.416-1.224 1.69-.17 3.108.105 3.867 1.053a.6.6 0 0 0 .936 0c.76-.948 2.177-1.223 3.867-1.053 1.653.167 3.36.744 4.417 1.224a.6.6 0 0 0 .848-.546v-13.2a.6.6 0 0 0-.351-.546c-1.143-.52-2.976-1.142-4.793-1.326-1.56-.157-3.274-.004-4.456 1.012Z">
+                </path>
+              </svg>
+            </div>
+            <div class="services__grid--item-info">
+              <div class="services__grid--item-title">SEO</div>
+              <div class="services__grid--item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+          </div>
+          <div class="services__grid--item">
+            <div class="services__grid--item-image">
+              <svg width="46" height="46" fill="#95e1d3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.905 3.295a.6.6 0 0 0-.85 0l-7.2 7.2a.6.6 0 0 0-.175.425v8.4a.6.6 0 0 0 .6.6h5.4a.6.6 0 0 0 .6-.6v-4.8h2.4v4.8a.6.6 0 0 0 .6.6h5.4a.6.6 0 0 0 .6-.6v-8.4a.602.602 0 0 0-.175-.425L18.48 8.872V4.92a.6.6 0 0 0-.6-.6h-1.2a.6.6 0 0 0-.6.6v1.552l-3.175-3.177ZM5.88 18.72v-7.55l6.6-6.6 6.6 6.6v7.551h-4.2v-4.8a.6.6 0 0 0-.6-.6h-3.6a.6.6 0 0 0-.6.6v4.8h-4.2Z">
+                </path>
+              </svg>
+            </div>
+            <div class="services__grid--item-info">
+              <div class="services__grid--item-title">CSS/HTML</div>
+              <div class="services__grid--item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+          </div>
+          <div class="services__grid--item">
+            <div class="services__grid--item-image">
+              <svg width="46" height="46" fill="#95e1d3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.5 3.25V7H3.25V3.25H9.5ZM3.25 2A1.25 1.25 0 0 0 2 3.25V7a1.25 1.25 0 0 0 1.25 1.25H9.5A1.25 1.25 0 0 0 10.75 7V3.25A1.25 1.25 0 0 0 9.5 2H3.25Zm17.5 15v3.75H14.5V17h6.25Zm-6.25-1.25A1.25 1.25 0 0 0 13.25 17v3.75A1.25 1.25 0 0 0 14.5 22h6.25A1.25 1.25 0 0 0 22 20.75V17a1.25 1.25 0 0 0-1.25-1.25H14.5ZM9.5 12v8.75H3.25V12H9.5Zm-6.25-1.25A1.25 1.25 0 0 0 2 12v8.75A1.25 1.25 0 0 0 3.25 22H9.5a1.25 1.25 0 0 0 1.25-1.25V12a1.25 1.25 0 0 0-1.25-1.25H3.25Zm17.5-7.5V12H14.5V3.25h6.25ZM14.5 2a1.25 1.25 0 0 0-1.25 1.25V12a1.25 1.25 0 0 0 1.25 1.25h6.25A1.25 1.25 0 0 0 22 12V3.25A1.25 1.25 0 0 0 20.75 2H14.5Z">
+                </path>
+              </svg>
+            </div>
+            <div class="services__grid--item-info">
+              <div class="services__grid--item-title">Digital</div>
+              <div class="services__grid--item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" aria-labelledby="work-title">
+      <div class="work__container">
+        <div class="work__container--block-title">
+          <h3 class="work__container--title" id="work-title">
+            <strong>Who we are</strong> Meet our team
+          </h3>
+          <p class="work__container--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="work__container--workers">
+          <div class="work__container--workers-single">
+            <div class="work__container--socials-wrap">
+              <img src="./dist/images/Matthew.png" alt="Matthew Dix Graphic Designer"
+                class="work__container--workers-single-image" />
+              <div class="work__container--worker-socials">
+                <a href="#" tabindex="0" aria-label="Link do Facebooka" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.08 12.539c0-5.335-4.298-9.66-9.6-9.66-5.304.001-9.602 4.325-9.602 9.661 0 4.82 3.511 8.817 8.1 9.541v-6.75H8.542v-2.79h2.438v-2.13c0-2.421 1.434-3.758 3.627-3.758 1.05 0 2.149.188 2.149.188v2.376h-1.21c-1.192 0-1.564.745-1.564 1.51v1.812h2.661l-.425 2.791H13.98v6.75c4.59-.725 8.1-4.72 8.1-9.541Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" tabindex="0" aria-label="Link do Twittera" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.432 19.8c7.245 0 11.209-6.005 11.209-11.202 0-.168 0-.338-.007-.506A8.023 8.023 0 0 0 21.6 6.049a7.99 7.99 0 0 1-2.266.622 3.961 3.961 0 0 0 1.736-2.18 7.84 7.84 0 0 1-2.505.951 3.943 3.943 0 0 0-6.715 3.593A11.19 11.19 0 0 1 3.73 4.92a3.947 3.947 0 0 0 1.222 5.259 3.989 3.989 0 0 1-1.784-.49v.054a3.946 3.946 0 0 0 3.159 3.862 3.964 3.964 0 0 1-1.775.069 3.939 3.939 0 0 0 3.68 2.733 7.907 7.907 0 0 1-4.896 1.688 7.585 7.585 0 0 1-.936-.054A11.213 11.213 0 0 0 8.432 19.8Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" tabindex="0" aria-label="Link do Pinteresta" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.48 2.4a9.6 9.6 0 0 0-3.498 18.543c-.084-.76-.16-1.927.033-2.757.175-.75 1.125-4.772 1.125-4.772s-.287-.575-.287-1.424c0-1.336.774-2.332 1.738-2.332.818 0 1.214.614 1.214 1.352 0 .824-.524 2.055-.795 3.196-.226.955.48 1.735 1.422 1.735 1.706 0 3.018-1.8 3.018-4.397 0-2.298-1.653-3.904-4.01-3.904-2.732 0-4.335 2.048-4.335 4.165 0 .825.318 1.71.714 2.191a.288.288 0 0 1 .067.276c-.073.302-.235.955-.266 1.088-.042.176-.14.213-.322.129-1.2-.558-1.949-2.311-1.949-3.72 0-3.028 2.201-5.808 6.344-5.808 3.33 0 5.918 2.372 5.918 5.544 0 3.308-2.087 5.971-4.981 5.971-.974 0-1.888-.505-2.201-1.103l-.598 2.283c-.217.834-.803 1.879-1.194 2.516A9.6 9.6 0 1 0 12.48 2.4Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" tabindex="0" aria-label="Link do Instagrama" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 2c-2.714 0-3.055.013-4.121.06-1.066.05-1.793.217-2.429.465a4.896 4.896 0 0 0-1.771 1.154A4.909 4.909 0 0 0 2.525 5.45c-.248.635-.416 1.362-.465 2.425C2.013 8.944 2 9.284 2 12.001c0 2.715.013 3.055.06 4.121.05 1.066.217 1.792.465 2.428a4.91 4.91 0 0 0 1.154 1.771 4.88 4.88 0 0 0 1.77 1.154c.637.247 1.362.416 2.427.465 1.068.047 1.408.06 4.124.06 2.716 0 3.055-.012 4.122-.06 1.064-.05 1.793-.218 2.43-.465a4.893 4.893 0 0 0 1.77-1.154 4.91 4.91 0 0 0 1.153-1.771c.246-.636.415-1.363.465-2.428.047-1.066.06-1.406.06-4.122s-.012-3.056-.06-4.124c-.05-1.064-.219-1.791-.465-2.426a4.907 4.907 0 0 0-1.154-1.771 4.888 4.888 0 0 0-1.771-1.154c-.637-.248-1.365-.416-2.429-.465-1.067-.047-1.406-.06-4.123-.06H12Zm-.896 1.803H12c2.67 0 2.987.008 4.04.057.975.044 1.505.208 1.858.344.466.181.8.399 1.15.748.35.35.566.683.747 1.15.138.352.3.882.344 1.857.049 1.053.059 1.37.059 4.039 0 2.668-.01 2.986-.059 4.04-.044.974-.207 1.503-.344 1.856a3.09 3.09 0 0 1-.748 1.149 3.09 3.09 0 0 1-1.15.747c-.35.137-.88.3-1.857.345-1.053.047-1.37.059-4.04.059s-2.987-.011-4.041-.059c-.975-.045-1.504-.208-1.856-.345a3.097 3.097 0 0 1-1.15-.747 3.1 3.1 0 0 1-.75-1.15c-.136-.352-.3-.882-.344-1.857-.047-1.054-.057-1.37-.057-4.041 0-2.67.01-2.985.057-4.039.045-.975.208-1.505.345-1.857.181-.466.399-.8.749-1.15a3.09 3.09 0 0 1 1.15-.748c.352-.137.881-.3 1.856-.345.923-.042 1.28-.055 3.144-.056v.003Zm6.235 1.66a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 6.865a5.136 5.136 0 1 0-.16 10.272A5.136 5.136 0 0 0 12 6.865Zm0 1.801a3.334 3.334 0 1 1 0 6.668 3.334 3.334 0 0 1 0-6.668Z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="work__container--workers-single-info">
+              <div class="work__container--worker-name">
+                Matthew Dix
+              </div>
+              <div class="work__container--worker-job">
+                Graphic Design
+              </div>
+            </div>
+          </div>
+          <div class="work__container--workers-single">
+            <div class="work__container--socials-wrap">
+              <img src="./dist/images/Christopher.png" alt="Christopher Campbell Branding/UX design"
+                class="work__container--workers-single-image" />
+              <div class="work__container--worker-socials">
+                <a href="#" tabindex="0" aria-label="Link do Facebooka" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.08 12.539c0-5.335-4.298-9.66-9.6-9.66-5.304.001-9.602 4.325-9.602 9.661 0 4.82 3.511 8.817 8.1 9.541v-6.75H8.542v-2.79h2.438v-2.13c0-2.421 1.434-3.758 3.627-3.758 1.05 0 2.149.188 2.149.188v2.376h-1.21c-1.192 0-1.564.745-1.564 1.51v1.812h2.661l-.425 2.791H13.98v6.75c4.59-.725 8.1-4.72 8.1-9.541Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" tabindex="0" aria-label="Link do Twittera" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.432 19.8c7.245 0 11.209-6.005 11.209-11.202 0-.168 0-.338-.007-.506A8.023 8.023 0 0 0 21.6 6.049a7.99 7.99 0 0 1-2.266.622 3.961 3.961 0 0 0 1.736-2.18 7.84 7.84 0 0 1-2.505.951 3.943 3.943 0 0 0-6.715 3.593A11.19 11.19 0 0 1 3.73 4.92a3.947 3.947 0 0 0 1.222 5.259 3.989 3.989 0 0 1-1.784-.49v.054a3.946 3.946 0 0 0 3.159 3.862 3.964 3.964 0 0 1-1.775.069 3.939 3.939 0 0 0 3.68 2.733 7.907 7.907 0 0 1-4.896 1.688 7.585 7.585 0 0 1-.936-.054A11.213 11.213 0 0 0 8.432 19.8Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" tabindex="0" aria-label="Link do Pinteresta" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.48 2.4a9.6 9.6 0 0 0-3.498 18.543c-.084-.76-.16-1.927.033-2.757.175-.75 1.125-4.772 1.125-4.772s-.287-.575-.287-1.424c0-1.336.774-2.332 1.738-2.332.818 0 1.214.614 1.214 1.352 0 .824-.524 2.055-.795 3.196-.226.955.48 1.735 1.422 1.735 1.706 0 3.018-1.8 3.018-4.397 0-2.298-1.653-3.904-4.01-3.904-2.732 0-4.335 2.048-4.335 4.165 0 .825.318 1.71.714 2.191a.288.288 0 0 1 .067.276c-.073.302-.235.955-.266 1.088-.042.176-.14.213-.322.129-1.2-.558-1.949-2.311-1.949-3.72 0-3.028 2.201-5.808 6.344-5.808 3.33 0 5.918 2.372 5.918 5.544 0 3.308-2.087 5.971-4.981 5.971-.974 0-1.888-.505-2.201-1.103l-.598 2.283c-.217.834-.803 1.879-1.194 2.516A9.6 9.6 0 1 0 12.48 2.4Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" tabindex="0" aria-label="Link do Instagrama" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 2c-2.714 0-3.055.013-4.121.06-1.066.05-1.793.217-2.429.465a4.896 4.896 0 0 0-1.771 1.154A4.909 4.909 0 0 0 2.525 5.45c-.248.635-.416 1.362-.465 2.425C2.013 8.944 2 9.284 2 12.001c0 2.715.013 3.055.06 4.121.05 1.066.217 1.792.465 2.428a4.91 4.91 0 0 0 1.154 1.771 4.88 4.88 0 0 0 1.77 1.154c.637.247 1.362.416 2.427.465 1.068.047 1.408.06 4.124.06 2.716 0 3.055-.012 4.122-.06 1.064-.05 1.793-.218 2.43-.465a4.893 4.893 0 0 0 1.77-1.154 4.91 4.91 0 0 0 1.153-1.771c.246-.636.415-1.363.465-2.428.047-1.066.06-1.406.06-4.122s-.012-3.056-.06-4.124c-.05-1.064-.219-1.791-.465-2.426a4.907 4.907 0 0 0-1.154-1.771 4.888 4.888 0 0 0-1.771-1.154c-.637-.248-1.365-.416-2.429-.465-1.067-.047-1.406-.06-4.123-.06H12Zm-.896 1.803H12c2.67 0 2.987.008 4.04.057.975.044 1.505.208 1.858.344.466.181.8.399 1.15.748.35.35.566.683.747 1.15.138.352.3.882.344 1.857.049 1.053.059 1.37.059 4.039 0 2.668-.01 2.986-.059 4.04-.044.974-.207 1.503-.344 1.856a3.09 3.09 0 0 1-.748 1.149 3.09 3.09 0 0 1-1.15.747c-.35.137-.88.3-1.857.345-1.053.047-1.37.059-4.04.059s-2.987-.011-4.041-.059c-.975-.045-1.504-.208-1.856-.345a3.097 3.097 0 0 1-1.15-.747 3.1 3.1 0 0 1-.75-1.15c-.136-.352-.3-.882-.344-1.857-.047-1.054-.057-1.37-.057-4.041 0-2.67.01-2.985.057-4.039.045-.975.208-1.505.345-1.857.181-.466.399-.8.749-1.15a3.09 3.09 0 0 1 1.15-.748c.352-.137.881-.3 1.856-.345.923-.042 1.28-.055 3.144-.056v.003Zm6.235 1.66a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 6.865a5.136 5.136 0 1 0-.16 10.272A5.136 5.136 0 0 0 12 6.865Zm0 1.801a3.334 3.334 0 1 1 0 6.668 3.334 3.334 0 0 1 0-6.668Z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="work__container--workers-single-info">
+              <div class="work__container--worker-name">
+                Christopher Campbell
+              </div>
+              <div class="work__container--worker-job">
+                Branding/UX design
+              </div>
+            </div>
+          </div>
+          <div class="work__container--workers-single">
+            <div class="work__container--socials-wrap">
+              <img src="./dist/images/Michael.png" alt="Michael Fertig Developer"
+                class="work__container--workers-single-image" />
+              <div class="work__container--worker-socials">
+                <a href="#" tabindex="0" aria-label="Link do Facebooka" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.08 12.539c0-5.335-4.298-9.66-9.6-9.66-5.304.001-9.602 4.325-9.602 9.661 0 4.82 3.511 8.817 8.1 9.541v-6.75H8.542v-2.79h2.438v-2.13c0-2.421 1.434-3.758 3.627-3.758 1.05 0 2.149.188 2.149.188v2.376h-1.21c-1.192 0-1.564.745-1.564 1.51v1.812h2.661l-.425 2.791H13.98v6.75c4.59-.725 8.1-4.72 8.1-9.541Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" tabindex="0" aria-label="Link do Twittera" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.432 19.8c7.245 0 11.209-6.005 11.209-11.202 0-.168 0-.338-.007-.506A8.023 8.023 0 0 0 21.6 6.049a7.99 7.99 0 0 1-2.266.622 3.961 3.961 0 0 0 1.736-2.18 7.84 7.84 0 0 1-2.505.951 3.943 3.943 0 0 0-6.715 3.593A11.19 11.19 0 0 1 3.73 4.92a3.947 3.947 0 0 0 1.222 5.259 3.989 3.989 0 0 1-1.784-.49v.054a3.946 3.946 0 0 0 3.159 3.862 3.964 3.964 0 0 1-1.775.069 3.939 3.939 0 0 0 3.68 2.733 7.907 7.907 0 0 1-4.896 1.688 7.585 7.585 0 0 1-.936-.054A11.213 11.213 0 0 0 8.432 19.8Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" tabindex="0" aria-label="Link do Pinteresta" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.48 2.4a9.6 9.6 0 0 0-3.498 18.543c-.084-.76-.16-1.927.033-2.757.175-.75 1.125-4.772 1.125-4.772s-.287-.575-.287-1.424c0-1.336.774-2.332 1.738-2.332.818 0 1.214.614 1.214 1.352 0 .824-.524 2.055-.795 3.196-.226.955.48 1.735 1.422 1.735 1.706 0 3.018-1.8 3.018-4.397 0-2.298-1.653-3.904-4.01-3.904-2.732 0-4.335 2.048-4.335 4.165 0 .825.318 1.71.714 2.191a.288.288 0 0 1 .067.276c-.073.302-.235.955-.266 1.088-.042.176-.14.213-.322.129-1.2-.558-1.949-2.311-1.949-3.72 0-3.028 2.201-5.808 6.344-5.808 3.33 0 5.918 2.372 5.918 5.544 0 3.308-2.087 5.971-4.981 5.971-.974 0-1.888-.505-2.201-1.103l-.598 2.283c-.217.834-.803 1.879-1.194 2.516A9.6 9.6 0 1 0 12.48 2.4Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" tabindex="0" aria-label="Link do Instagrama" class="work__container--social-link">
+                  <svg width="46" height="46" fill="#F38181" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 2c-2.714 0-3.055.013-4.121.06-1.066.05-1.793.217-2.429.465a4.896 4.896 0 0 0-1.771 1.154A4.909 4.909 0 0 0 2.525 5.45c-.248.635-.416 1.362-.465 2.425C2.013 8.944 2 9.284 2 12.001c0 2.715.013 3.055.06 4.121.05 1.066.217 1.792.465 2.428a4.91 4.91 0 0 0 1.154 1.771 4.88 4.88 0 0 0 1.77 1.154c.637.247 1.362.416 2.427.465 1.068.047 1.408.06 4.124.06 2.716 0 3.055-.012 4.122-.06 1.064-.05 1.793-.218 2.43-.465a4.893 4.893 0 0 0 1.77-1.154 4.91 4.91 0 0 0 1.153-1.771c.246-.636.415-1.363.465-2.428.047-1.066.06-1.406.06-4.122s-.012-3.056-.06-4.124c-.05-1.064-.219-1.791-.465-2.426a4.907 4.907 0 0 0-1.154-1.771 4.888 4.888 0 0 0-1.771-1.154c-.637-.248-1.365-.416-2.429-.465-1.067-.047-1.406-.06-4.123-.06H12Zm-.896 1.803H12c2.67 0 2.987.008 4.04.057.975.044 1.505.208 1.858.344.466.181.8.399 1.15.748.35.35.566.683.747 1.15.138.352.3.882.344 1.857.049 1.053.059 1.37.059 4.039 0 2.668-.01 2.986-.059 4.04-.044.974-.207 1.503-.344 1.856a3.09 3.09 0 0 1-.748 1.149 3.09 3.09 0 0 1-1.15.747c-.35.137-.88.3-1.857.345-1.053.047-1.37.059-4.04.059s-2.987-.011-4.041-.059c-.975-.045-1.504-.208-1.856-.345a3.097 3.097 0 0 1-1.15-.747 3.1 3.1 0 0 1-.75-1.15c-.136-.352-.3-.882-.344-1.857-.047-1.054-.057-1.37-.057-4.041 0-2.67.01-2.985.057-4.039.045-.975.208-1.505.345-1.857.181-.466.399-.8.749-1.15a3.09 3.09 0 0 1 1.15-.748c.352-.137.881-.3 1.856-.345.923-.042 1.28-.055 3.144-.056v.003Zm6.235 1.66a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 6.865a5.136 5.136 0 1 0-.16 10.272A5.136 5.136 0 0 0 12 6.865Zm0 1.801a3.334 3.334 0 1 1 0 6.668 3.334 3.334 0 0 1 0-6.668Z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="work__container--workers-single-info">
+              <div class="work__container--worker-name">
+                Michael Fertig
+              </div>
+              <div class="work__container--worker-job">
+                Developer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section id="contact">
+        <div class="footer__container">
+          <div class="footer__container--copyrights">
+            © 2022 MoGo proudly implemented by <span>Dawid Ślusarek</span>
+          </div>
+          <div class="footer__container--subscribe">
+            <form action="/" method="POST">
+              <input type="email" placeholder="Your Email..." />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </main>
   <script src="./src/js/script.js" async defer></script>
 </body>
 
