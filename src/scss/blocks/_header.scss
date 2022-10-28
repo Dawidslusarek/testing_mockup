@@ -5,7 +5,11 @@
   .container__header {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(#f38189e6 40%, #fce38ae8), url("./images/header_background.png");
+    background-image: linear-gradient(#f38189e6 40%, #fce38ae8), image-set(url('./images/header_background.png') 1x,
+        url('./images/header_background@2x.png') 2x);
+    background-image: linear-gradient(#f38189e6 40%, #fce38ae8), -webkit-image-set(url('./images/header_background.png') 1x,
+        url('./images/header_background@2x.png') 2x);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,6 +71,10 @@
           max-width: 34px;
           max-height: 34px;
           margin-left: 10px;
+
+          &:hover {
+            fill: #fce38a;
+          }
         }
 
         @media(max-width:898px) {
@@ -118,12 +126,7 @@
       }
 
       .nav__link {
-        margin-left: 26px;
         text-decoration: none;
-
-        @media(max-width:898px) {
-          margin-left: 0px;
-        }
 
         &--logo {
           color: #fff;
@@ -171,6 +174,10 @@
           svg {
             max-width: 20px;
             max-height: 20px;
+
+            &:hover {
+              fill: #fce38a;
+            }
           }
         }
       }
