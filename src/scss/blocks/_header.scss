@@ -24,9 +24,106 @@
       left: 50%;
       top: 0;
 
+      &.floated {
+        position: fixed;
+        padding-top: 10px;
+        background-color: #f38189;
+        padding: 20px 100%;
+        z-index: 999999;
+
+        @media(max-width: 898px) {
+          padding: 10px 5%;
+        }
+      }
+
+      @media(max-width:1280px) {
+        max-width: 95%;
+      }
+
+      @media(max-width:767px) {
+        max-width: 90%;
+      }
+
+      @media(max-width:898px) {
+        padding-bottom: 10px;
+      }
+
+      .nav__menu--desktop {
+        @media(max-width:898px) {
+          display: none !important;
+        }
+      }
+
+      .nav__menu--mobile {
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+
+        .mobile__menu--close {
+          display: none;
+        }
+
+        svg {
+          max-width: 34px;
+          max-height: 34px;
+          margin-left: 10px;
+        }
+
+        @media(max-width:898px) {
+          display: flex !important;
+        }
+
+        .mobile__menu--links {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: #f38189;
+          display: flex;
+          flex-direction: column;
+          height: 0px;
+          overflow: hidden;
+          transition: all .4s;
+          opacity: 0;
+          visibility: hidden;
+
+          &.active {
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+          }
+
+          li {
+            &:last-child {
+              a {
+                border-bottom: none;
+              }
+            }
+          }
+
+          .nav__menu--link {
+
+            font-size: 16px;
+            border-bottom: 1px solid #fce38a;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 14px 0;
+
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+
       .nav__link {
         margin-left: 26px;
         text-decoration: none;
+
+        @media(max-width:898px) {
+          margin-left: 0px;
+        }
 
         &--logo {
           color: #fff;
@@ -87,6 +184,14 @@
           color: #fff;
           font-size: 72px;
           display: block;
+
+          @media(max-width:1280px) {
+            font-size: 48px;
+          }
+
+          @media(max-width:767px) {
+            font-size: 32px;
+          }
         }
 
         font-size: 150px;
@@ -94,6 +199,14 @@
         text-align: center;
         color: #fff;
         text-transform: uppercase;
+
+        @media(max-width:1280px) {
+          font-size: 100px;
+        }
+
+        @media(max-width:767px) {
+          font-size: 46px;
+        }
       }
     }
 

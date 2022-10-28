@@ -7,6 +7,14 @@
   max-width: 1140px;
   margin: 0 auto;
 
+  @media(max-width:1280px) {
+    max-width: 95%;
+  }
+
+  @media(max-width:767px) {
+    max-width: 90%;
+  }
+
   &--block-title {
     .work__container--title {
       text-transform: uppercase;
@@ -44,6 +52,10 @@
       font-size: 15px;
       color: #999;
       text-align: center;
+
+      @media(max-width:767px) {
+        padding: 40px 5px;
+      }
     }
   }
 
@@ -53,6 +65,15 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
 
+    @media(max-width: 1280px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 120px;
+    }
+
+    @media(max-width:767px) {
+      grid-template-columns: 1fr;
+    }
+
     &-single {
       display: block;
       position: relative;
@@ -61,6 +82,7 @@
       left: 0;
       top: 0;
 
+      &:focus,
       &:hover {
         background: linear-gradient(#f38189e6 40%, #fce38ae8);
         box-shadow: 8px 8px 0px 0px #95e1d3;

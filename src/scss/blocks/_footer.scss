@@ -7,13 +7,32 @@ footer {
     margin: 0 auto;
     padding: 24px 0px 12px 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    @media(max-width:1280px) {
+      max-width: 95%;
+    }
+
+    @media(max-width:767px) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      gap: 30px;
+      max-width: 90%;
+    }
 
     &--copyrights {
       font-size: 14px;
       color: #333;
       font-weight: 500;
+
+      @media(max-width:767px) {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+      }
 
       span {
         color: #f38189;
@@ -22,12 +41,30 @@ footer {
     }
 
     &--subscribe {
+      @media(max-width:767px) {
+        max-width: 90%;
+      }
+
       form {
         display: flex;
+
+        @media(max-width:767px) {
+          max-width: 90%;
+          justify-content: center;
+          margin: 0 auto;
+        }
 
         input[type="email"] {
           border: 1px solid #e7e7e7;
           padding: 15px;
+
+          @media(max-width:767px) {
+            max-width: 50%;
+          }
+
+          @media(max-width:767px) {
+            padding: 10px;
+          }
 
           &::placeholder {
             color: #e7e7e7;
@@ -43,6 +80,10 @@ footer {
           font-size: 14px;
           padding: 15px;
           font-weight: bold;
+
+          @media(max-width:767px) {
+            padding: 10px;
+          }
         }
       }
     }

@@ -13,39 +13,39 @@
 <body>
   <section id="header" class="container" aria-labelledby="main-title">
     <header class="container__header">
-      <nav class="container__nav container__nav--desktop">
-        <a href="/#" class="nav__link" tabindex="0" aria-label="Logo, link powrotu do strony głównej">
+      <nav class="container__nav">
+        <a href="#header" class="nav__link" tabindex="0" aria-label="Logo, link powrotu do strony głównej">
           <span class="nav__link--logo">MoGo</span>
         </a>
-        <ul class="nav__menu">
+        <ul class="nav__menu nav__menu--desktop">
           <li class="nav__menu--item">
-            <a class="nav__menu--link nav__menu--link-active" href="/#header" tabindex="0"
+            <a class="nav__menu--link nav__menu--link-active" href="#header" tabindex="0"
               aria-label="Link do głównej sekcji strony">
               About
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="/#service" tabindex="0" aria-label="Link do sekcji service">
+            <a class="nav__menu--link" href="#service" tabindex="0" aria-label="Link do sekcji service">
               Service
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="/#work" tabindex="0" aria-label="Link do sekcji work">
+            <a class="nav__menu--link" href="#work" tabindex="0" aria-label="Link do sekcji work">
               Work
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="/#blog" tabindex="0" aria-label="Link do sekcji blog">
+            <a class="nav__menu--link" href="#blog" tabindex="0" aria-label="Link do sekcji blog">
               Blog
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="/#contact" tabindex="0" aria-label="Link do sekcji contact">
+            <a class="nav__menu--link" href="#contact" tabindex="0" aria-label="Link do sekcji contact">
               Contact
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="/#" tabindex="0" aria-label="Link do koszyka">
+            <a class="nav__menu--link" href="#" tabindex="0" aria-label="Link do koszyka">
               <svg width="46" height="46" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M2.88 3.72a.6.6 0 0 1 .6-.6h1.8a.6.6 0 0 1 .582.455l.486 1.945H20.28a.6.6 0 0 1 .588.718l-1.2 6a.6.6 0 0 1-.558.48l-11.277.567.345 1.835H18.48a.6.6 0 1 1 0 1.2H7.68a.6.6 0 0 1-.59-.49L5.293 6.25l-.48-1.929H3.48a.6.6 0 0 1-.6-.6Zm3.722 3 1.008 5.375 10.973-.55.965-4.825H6.602Zm2.278 9.6a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8Zm8.4 0a2.4 2.4 0 1 0 0 4.801 2.4 2.4 0 0 0 0-4.8Zm-8.4 1.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Zm8.4 0a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z">
@@ -54,7 +54,7 @@
             </a>
           </li>
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="/#" tabindex="0" aria-label="Szukaj">
+            <a class="nav__menu--link" href="#" tabindex="0" aria-label="Szukaj">
               <svg width="46" height="46" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.97 14.332a7.8 7.8 0 1 0-1.676 1.678h-.001c.036.048.074.094.117.138l4.62 4.62a1.2 1.2 0 0 0 1.698-1.697l-4.62-4.62a1.201 1.201 0 0 0-.138-.12v.001Zm.31-4.612a6.6 6.6 0 1 1-13.2 0 6.6 6.6 0 0 1 13.2 0Z">
@@ -63,6 +63,70 @@
             </a>
           </li>
         </ul>
+        <div class="nav__menu--mobile">
+          <div class="nav__menu--search">
+            <a class="nav__menu--link-mobile" href="#" tabindex="0" aria-label="Szukaj">
+              <svg width="46" height="46" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.97 14.332a7.8 7.8 0 1 0-1.676 1.678h-.001c.036.048.074.094.117.138l4.62 4.62a1.2 1.2 0 0 0 1.698-1.697l-4.62-4.62a1.201 1.201 0 0 0-.138-.12v.001Zm.31-4.612a6.6 6.6 0 1 1-13.2 0 6.6 6.6 0 0 1 13.2 0Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <div class="nav__menu--cart">
+            <a class="nav__menu--link-mobile" href="#" tabindex="0" aria-label="Link do koszyka">
+              <svg width="46" height="46" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.88 3.72a.6.6 0 0 1 .6-.6h1.8a.6.6 0 0 1 .582.455l.486 1.945H20.28a.6.6 0 0 1 .588.718l-1.2 6a.6.6 0 0 1-.558.48l-11.277.567.345 1.835H18.48a.6.6 0 1 1 0 1.2H7.68a.6.6 0 0 1-.59-.49L5.293 6.25l-.48-1.929H3.48a.6.6 0 0 1-.6-.6Zm3.722 3 1.008 5.375 10.973-.55.965-4.825H6.602Zm2.278 9.6a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8Zm8.4 0a2.4 2.4 0 1 0 0 4.801 2.4 2.4 0 0 0 0-4.8Zm-8.4 1.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Zm8.4 0a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <div class="mobile__menu--trigger">
+            <svg width="46" height="46" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12h18"></path>
+              <path d="M3 6h18"></path>
+              <path d="M3 18h18"></path>
+            </svg>
+          </div>
+          <div class="mobile__menu--close">
+            <svg width="46" height="46" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+            </svg>
+          </div>
+          <ul class="mobile__menu--links">
+            <li class="nav__menu--item">
+              <a class="nav__menu--link nav__menu--link-active" href="#header" tabindex="0"
+                aria-label="Link do głównej sekcji strony">
+                About
+              </a>
+            </li>
+            <li class="nav__menu--item">
+              <a class="nav__menu--link" href="#service" tabindex="0" aria-label="Link do sekcji service">
+                Service
+              </a>
+            </li>
+            <li class="nav__menu--item">
+              <a class="nav__menu--link" href="#work" tabindex="0" aria-label="Link do sekcji work">
+                Work
+              </a>
+            </li>
+            <li class="nav__menu--item">
+              <a class="nav__menu--link" href="#blog" tabindex="0" aria-label="Link do sekcji blog">
+                Blog
+              </a>
+            </li>
+            <li class="nav__menu--item">
+              <a class="nav__menu--link" href="#contact" tabindex="0" aria-label="Link do sekcji contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="block__title">
         <h1 id="main-title" class="block__title--title"><strong>Creative Template</strong>
@@ -70,7 +134,7 @@
         </h1>
       </div>
       <div class="block__button">
-        <a class="block__button--link" href="/#service" tabindex="0" aria-label="Link do sekcji service">
+        <a class="block__button--link" href="#service" tabindex="0" aria-label="Link do sekcji service">
           Learn More
         </a>
       </div>
@@ -186,7 +250,7 @@
             ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
         <div class="work__container--workers">
-          <div class="work__container--workers-single">
+          <div class="work__container--workers-single" tabindex="0" aria-label="Matthew Dix Graphic Designer">
             <div class="work__container--socials-wrap">
               <img src="./dist/images/Matthew.png" alt="Matthew Dix Graphic Designer"
                 class="work__container--workers-single-image" />
@@ -230,7 +294,8 @@
               </div>
             </div>
           </div>
-          <div class="work__container--workers-single">
+          <div class="work__container--workers-single" aria-label="Christopher Campbell Branding/UX design"
+            tabindex="0">
             <div class="work__container--socials-wrap">
               <img src="./dist/images/Christopher.png" alt="Christopher Campbell Branding/UX design"
                 class="work__container--workers-single-image" />
@@ -274,7 +339,7 @@
               </div>
             </div>
           </div>
-          <div class="work__container--workers-single">
+          <div class="work__container--workers-single" tabindex="0" aria-label="Michael Fertig Developer">
             <div class="work__container--socials-wrap">
               <img src="./dist/images/Michael.png" alt="Michael Fertig Developer"
                 class="work__container--workers-single-image" />
@@ -328,16 +393,49 @@
             © 2022 MoGo proudly implemented by <span>Dawid Ślusarek</span>
           </div>
           <div class="footer__container--subscribe">
-            <form action="/" method="POST">
-              <input type="email" placeholder="Your Email..." />
-              <button type="submit">Subscribe</button>
+            <form action="/" method="POST" aria-label="Formularz subskrypcji">
+              <input type="email" placeholder="Your Email..." tabindex="0"
+                aria-label="Input do wprowadzenia adresu email" />
+              <button type="submit" tabindex="0" aria-label="Przycisk wysłania formularza">Subscribe</button>
             </form>
           </div>
         </div>
       </section>
     </footer>
   </main>
-  <script src="./src/js/script.js" async defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (e) => {
+      const mobileTrigger = document.querySelector('.mobile__menu--trigger');
+      const mobileClose = document.querySelector('.mobile__menu--close');
+      const mobileMenu = document.querySelector('.mobile__menu--links');
+      const containerNav = document.querySelector('.container__nav');
+
+      mobileTrigger.onclick = () => {
+        mobileTrigger.style.display = 'none';
+        mobileMenu.classList.toggle('active');
+        mobileClose.style.display = 'block';
+      }
+
+      mobileClose.onclick = () => {
+        mobileTrigger.style.display = 'block';
+        mobileMenu.classList.toggle('active');
+        mobileClose.style.display = 'none';
+      }
+
+      containerNav.querySelectorAll('a').forEach((el) => {
+        el.onclick = () => {
+          if (!mobileMenu.classList.contains('active')) return;
+          mobileTrigger.style.display = 'block';
+          mobileMenu.classList.toggle('active');
+          mobileClose.style.display = 'none';
+        }
+      })
+
+      window.onscroll = () => {
+        containerNav.classList.toggle("floated", window.scrollY > 300);
+      };
+    })
+  </script>
 </body>
 
 </html>
